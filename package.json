@@ -6,6 +6,9 @@
   "directories": {
     "test": "test"
   },
+  "engines": {
+    "node": ">=0.10.0"
+  },
   "dependencies": {
     "png.js": "^0.1.1",
     "ansi-256-colors": "^1.1.0"
