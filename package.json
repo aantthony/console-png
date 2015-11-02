@@ -1,0 +1,43 @@
+{
+  "name": "console-png",
+  "version": "1.0.0",
+  "description": "Print PNG images to terminal output",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "png.js": "^0.1.1",
+    "ansi-256-colors": "^1.1.0"
+  },
+  "standard": {
+    "ignore": []
+  },
+  "devDependencies": {
+    "mocha": "^2.3.3",
+    "standard": "^5.3.1"
+  },
+  "scripts": {
+    "test": "mocha",
+    "lint": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aantthony/console-png.git"
+  },
+  "author": "Anthony Foster",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aantthony/console-png/issues"
+  },
+  "homepage": "https://github.com/aantthony/console-png#readme",
+  "keywords": [
+    "console",
+    "png",
+    "terminal",
+    "ansi",
+    "xterm",
+    "256",
+    "colors"
+  ]
+}
