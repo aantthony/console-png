@@ -15,21 +15,17 @@ function printDouble (buffer, done) {
       for (var x = 0; x < png.getWidth(); x++) {
         var p1 = png.getPixel(x, y)
         var p2 = png.getPixel(x, y + 1)
-        var r1 = p1[0] / 255 * 5
-        var g1 = p1[1] / 255 * 5
-        var b1 = p1[2] / 255 * 5
-        var r2 = p2[0] / 255 * 5
-        var g2 = p2[1] / 255 * 5
-        var b2 = p2[2] / 255 * 5
-        s += colors.bg.getRgb(
-          Math.round(r1),
-          Math.round(g1),
-          Math.round(b1)
-        ) + colors.fg.getRgb(
-          Math.round(r2),
-          Math.round(g2),
-          Math.round(b2)
-        ) + CHAR_HALF_BLOCK
+        var r1 = Math.round(p1[0] / 255 * 5)
+        var g1 = Math.round(p1[1] / 255 * 5)
+        var b1 = Math.round(p1[2] / 255 * 5)
+        var r2 = Math.round(p2[0] / 255 * 5)
+        var g2 = Math.round(p2[1] / 255 * 5)
+        var b2 = Math.round(p2[2] / 255 * 5)
+        if (r1 + g1 + b1 === 0 || r2 + g2 + b2 === 0) {
+          s += colors.reset + ' ';
+        } else {
+          s += colors.bg.getRgb(r1, g1, b1) + colors.fg.getRgb(r2, g2, b2) + CHAR_HALF_BLOCK;
+        }
       }
     }
     s += colors.reset
