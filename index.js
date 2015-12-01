@@ -21,7 +21,7 @@ function printDouble (buffer, done) {
         var r2 = Math.round(p2[0] / 255 * 5)
         var g2 = Math.round(p2[1] / 255 * 5)
         var b2 = Math.round(p2[2] / 255 * 5)
-        if (r1 + g1 + b1 === 0 || r2 + g2 + b2 === 0) {
+        if (p1[3] === 0) {
           s += colors.reset + ' ';
         } else {
           s += colors.bg.getRgb(r1, g1, b1) + colors.fg.getRgb(r2, g2, b2) + CHAR_HALF_BLOCK;
