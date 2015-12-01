@@ -1,6 +1,6 @@
 {
   "name": "console-png",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Print PNG images to terminal output",
   "main": "index.js",
   "directories": {
