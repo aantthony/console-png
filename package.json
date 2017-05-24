@@ -1,6 +1,6 @@
 {
   "name": "console-png",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Print PNG images to terminal output",
   "main": "index.js",
   "directories": {
@@ -42,5 +42,8 @@
     "xterm",
     "256",
     "colors"
-  ]
+  ],
+  "bin": {
+    "console-png": "./bin/index.js"
+  }
 }
