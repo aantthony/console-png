@@ -5,6 +5,26 @@
 
 Print PNG images to terminal output.
 
+## Install
+
+To use this on your terminal:
+```
+npm install -g console-png
+```
+
+To use this programatically:
+```
+npm install --save console-png
+```
+
+## Terminal Usage
+```
+> console-png
+Usage: console-png [PNG FILE]...
+> console-png apple.png
+{image shown here}
+```
+
 ## Example Usage
 
 ```js
