@@ -4,7 +4,7 @@
 require('../').attachTo(console)
 
 var argv = process.argv;
-var images = process.argv.slice((argv[0] === "show-png")? 1: 2);
+var images = process.argv.slice((argv[0] === "console-png")? 1: 2);
 images = images.filter(function(filename){
   return filename.substring(filename.length - 4) === ".png"
 });
